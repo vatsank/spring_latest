@@ -1,0 +1,21 @@
+server:  port: 4055
+spring:
+  application:
+    name: review-service
+  datasource:    username: root
+    url: jdbc:mysql://localhost:3306/test
+    password: srivatsan    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:    show-sql: true
+    hibernate:      naming:        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl      ddl-auto: update            
+
+
+management:  endpoints:    web:      exposure:        include:        - '*'
+        
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
+            
+        

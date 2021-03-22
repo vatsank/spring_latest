@@ -1,0 +1,8 @@
+
+update,remove
+customerQueryMethod
+@query/@Modifying/@Transactional
+native query and jpa query
+
+
+
